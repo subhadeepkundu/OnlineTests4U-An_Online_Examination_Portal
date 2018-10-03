@@ -100,7 +100,7 @@ if (!isset($_SESSION["stuemail"])) {
 
             while ($rowf = mysqli_fetch_array($results)) {
                 $quesid = $rowf['quesid'];
-                $results2 = mysqli_query($conn, "SELECT * FROM stu_ans WHERE ques='$quesid' ");
+                $results2 = mysqli_query($conn, "SELECT * FROM stu_ans WHERE ques='$quesid' and stuid='$stuid' ");
                 $rowf2 = mysqli_fetch_array($results2)
             ?>
             <TR>

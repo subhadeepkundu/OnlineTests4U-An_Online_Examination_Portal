@@ -1,8 +1,6 @@
 <?php
 session_start();
-unset($_SESSION['instemail']);
 session_destroy();
-session_write_close();
 header('Location: institutelogin.php');
 die();
 ?>
